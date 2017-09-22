@@ -1,0 +1,356 @@
+package top.creeperdch.douyudemo.bean;
+
+import java.util.List;
+
+/**
+ * Created by CREEPERDCH on 2017/9/22.
+ * HINT:
+ */
+
+public class DouyuBean {
+
+    /**
+     * error : 0
+     * data : [{"room_id":"232987","room_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/232987_1421.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/232987_1421.jpg","isVertical":0,"cate_id":287,
+     * "room_name":"探秘s7总决赛战队三星SSG","owner_uid":"12696301","nickname":"hanjiaen","online":182372,
+     * "url":"http://www.douyu.com/alice520","game_url":"http://www.douyu
+     * .com/directory/game/xingyu","game_name":"星娱","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/012/69/63/01_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/012/69/63/01_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/012/69/63/01_avatar_small.jpg","jumpUrl":"","icon_data":{"status":5,
+     * "icon_url":"","icon_width":0,"icon_height":0}},{"room_id":"70231","room_src":"https://rpic
+     * .douyucdn.cn/acrpic/170922/70231_1420.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/70231_1420.jpg","isVertical":0,"cate_id":270,
+     * "room_name":"吃鸡-1000000000000000死","owner_uid":"2480808","nickname":"恶魔qq",
+     * "online":295436,"url":"http://www.douyu.com/70231","game_url":"http://www.douyu
+     * .com/directory/game/jdqs","game_name":"绝地求生","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/002/48/08/08_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/002/48/08/08_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/002/48/08/08_avatar_small.jpg","jumpUrl":"","icon_data":{"status":4,
+     * "icon_url":"https://staticlive.douyucdn.cn/upload/icon/0e88ac58871cc810265064e724f5ff5d
+     * .png","icon_width":"126","icon_height":"33"}},{"room_id":"226855","room_src":"https://rpic
+     * .douyucdn.cn/acrpic/170922/226855_1421.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/226855_1421.jpg","isVertical":0,"cate_id":181,"room_name":"可乐:大圣归来 日常送红包
+     * 红包送不停！","owner_uid":"2023912","nickname":"Devil丶可樂","online":236136,"url":"http://www
+     * .douyu.com/226855","game_url":"http://www.douyu.com/directory/game/wzry",
+     * "game_name":"王者荣耀","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/31/15/8b1e8b66f68e6d16e03e1c5982b80b55_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/31/15/8b1e8b66f68e6d16e03e1c5982b80b55_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/31/15/8b1e8b66f68e6d16e03e1c5982b80b55_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"74751","room_src":"https://rpic.douyucdn.cn/acrpic/170922/74751_1420.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/74751_1420.jpg","isVertical":0,
+     * "cate_id":19,"room_name":"我可能是玩了假的马里奥","owner_uid":"2863015","nickname":"超级小桀",
+     * "online":172354,"url":"http://www.douyu.com/cave","game_url":"http://www.douyu
+     * .com/directory/game/TVgame","game_name":"主机游戏","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/002/86/30/15_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/002/86/30/15_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/002/86/30/15_avatar_small.jpg","jumpUrl":"","icon_data":{"status":5,
+     * "icon_url":"","icon_width":0,"icon_height":0}},{"room_id":"414818",
+     * "room_src":"https://rpic.douyucdn.cn/acrpic/170922/414818_1421.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/414818_1421.jpg","isVertical":0,
+     * "cate_id":40,"room_name":"胜哥：天空套包包包，国庆套送送送。","owner_uid":"11235324","nickname":"胜哥002",
+     * "online":89239,"url":"http://www.douyu.com/414818","game_url":"http://www.douyu
+     * .com/directory/game/DNF","game_name":"DNF","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/011/23/53/24_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/011/23/53/24_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/011/23/53/24_avatar_small.jpg","jumpUrl":"","icon_data":{"status":4,
+     * "icon_url":"https://staticlive.douyucdn.cn/upload/icon/0e88ac58871cc810265064e724f5ff5d
+     * .png","icon_width":"126","icon_height":"33"}},{"room_id":"2124270",
+     * "room_src":"https://rpic.douyucdn.cn/acrpic/170922/2124270_1409.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/2124270_1409.jpg","isVertical":0,
+     * "cate_id":181,"room_name":"愿你千帆历尽，归来仍是少年","owner_uid":"28882207","nickname":"往事zr",
+     * "online":942002,"url":"http://www.douyu.com/2124270","game_url":"http://www.douyu
+     * .com/directory/game/wzry","game_name":"王者荣耀","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201706/17/23/ffbd53d52bc77f6f6f06f9af41678429_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201706/17/23/ffbd53d52bc77f6f6f06f9af41678429_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201706/17/23/ffbd53d52bc77f6f6f06f9af41678429_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"78561","room_src":"https://rpic.douyucdn.cn/acrpic/170922/78561_1420.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/78561_1420.jpg","isVertical":0,
+     * "cate_id":270,"room_name":"雪MM：单排吃鸡的萌妹子摄屏摄手","owner_uid":"1670103","nickname":"妃凌雪",
+     * "online":745604,"url":"http://www.douyu.com/78561","game_url":"http://www.douyu
+     * .com/directory/game/jdqs","game_name":"绝地求生","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/face/201608/31/7717fb9606c2df4ffd1f4690e454fd20_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/face/201608/31/7717fb9606c2df4ffd1f4690e454fd20_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/face/201608/31/7717fb9606c2df4ffd1f4690e454fd20_small.jpg","jumpUrl":"",
+     * "icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"432071","room_src":"https://rpic.douyucdn.cn/acrpic/170922/432071_1421.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/432071_1421.jpg","isVertical":0,
+     * "cate_id":208,"room_name":"文章、包贝尔、克拉拉《胖子行动队》","owner_uid":"26055491","nickname":"鱼乐现场官方",
+     * "online":64662,"url":"http://www.douyu.com/432071","game_url":"http://www.douyu
+     * .com/directory/game/stdp","game_name":"视听点评","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201704/05/20/bd3090b33a258ef3f0437834600f9932_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201704/05/20/bd3090b33a258ef3f0437834600f9932_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201704/05/20/bd3090b33a258ef3f0437834600f9932_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"1876924","room_src":"https://rpic.douyucdn.cn/acrpic/170921/1876924_1148.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170921/1876924_1148.jpg","isVertical":0,
+     * "cate_id":136,"room_name":"A70E上市发布、试驾会","owner_uid":"108561890","nickname":"小脸儿煞白白",
+     * "online":163232,"url":"http://www.douyu.com/1876924","game_url":"http://www.douyu
+     * .com/directory/game/car","game_name":"汽车","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201703/17/11/898b02331be055b5eea009f23e14244e_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201703/17/11/898b02331be055b5eea009f23e14244e_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201703/17/11/898b02331be055b5eea009f23e14244e_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"3325052","room_src":"https://rpic.douyucdn.cn/acrpic/170922/3325052_1417.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/3325052_1417.jpg","isVertical":0,
+     * "cate_id":208,"room_name":"潘玮柏新专辑庆功记者会","owner_uid":"167439003","nickname":"非凡娱乐",
+     * "online":119,"url":"http://www.douyu.com/3325052","game_url":"http://www.douyu
+     * .com/directory/game/stdp","game_name":"视听点评","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/22/12/f58f46a42d8dfe56254c982498b6517b_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/22/12/f58f46a42d8dfe56254c982498b6517b_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/22/12/f58f46a42d8dfe56254c982498b6517b_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"2082749","room_src":"https://rpic.douyucdn.cn/acrpic/170922/2082749_1409.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/2082749_1409.jpg","isVertical":0,
+     * "cate_id":181,"room_name":"全能型选手 荣耀第一排位","owner_uid":"48089098","nickname":"游弋Devil",
+     * "online":443392,"url":"http://www.douyu.com/2082749","game_url":"http://www.douyu
+     * .com/directory/game/wzry","game_name":"王者荣耀","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/02/03/55971954b96541ac0709e563360544a4_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/02/03/55971954b96541ac0709e563360544a4_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/02/03/55971954b96541ac0709e563360544a4_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"4809","room_src":"https://rpic.douyucdn.cn/acrpic/170922/4809_1420.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/4809_1420.jpg","isVertical":0,
+     * "cate_id":270,"room_name":"纳尔兽打野！","owner_uid":"184165","nickname":"饼干狂魔MasterB",
+     * "online":434614,"url":"http://www.douyu.com/4809","game_url":"http://www.douyu
+     * .com/directory/game/jdqs","game_name":"绝地求生","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/000/18/41/65_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/000/18/41/65_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/000/18/41/65_avatar_small.jpg","jumpUrl":"","icon_data":{"status":4,
+     * "icon_url":"https://staticlive.douyucdn.cn/upload/icon/74daf2afda59c97fa3a2d69f04caa90d
+     * .jpg","icon_width":"126","icon_height":"33"}},{"room_id":"699689","room_src":"https://rpic
+     * .douyucdn.cn/acrpic/170922/699689_1424.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/699689_1424.jpg","isVertical":0,"cate_id":270,"room_name":"「 狐狸 」满血复活！",
+     * "owner_uid":"54443679","nickname":"狐狸不太Sao","online":410962,"url":"http://www.douyu
+     * .com/699689","game_url":"http://www.douyu.com/directory/game/jdqs","game_name":"绝地求生",
+     * "avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/face/201607/22/e128367bca4e6ca3efd69e83a6243355_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/face/201607/22/e128367bca4e6ca3efd69e83a6243355_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/face/201607/22/e128367bca4e6ca3efd69e83a6243355_small.jpg","jumpUrl":"",
+     * "icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"229346","room_src":"https://rpic.douyucdn.cn/acrpic/170922/229346_1421.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/229346_1421.jpg","isVertical":0,
+     * "cate_id":124,"room_name":"第二代马自达cx-5主播约驾","owner_uid":"12733289","nickname":"高冷男神钱小佳",
+     * "online":402817,"url":"http://www.douyu.com/qianjia2015","game_url":"http://www.douyu
+     * .com/directory/game/HW","game_name":"户外","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/012/73/32/89_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/012/73/32/89_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/012/73/32/89_avatar_small.jpg","jumpUrl":"","icon_data":{"status":5,
+     * "icon_url":"","icon_width":0,"icon_height":0}},{"room_id":"56040","room_src":"https://rpic
+     * .douyucdn.cn/acrpic/170922/56040_1420.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/56040_1420.jpg","isVertical":0,"cate_id":270,
+     * "room_name":"油条:已经单人4排2连鸡！哼","owner_uid":"1001726","nickname":"主播油条","online":398452,
+     * "url":"http://www.douyu.com/56040","game_url":"http://www.douyu.com/directory/game/jdqs",
+     * "game_name":"绝地求生","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/001/00/17/26_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/001/00/17/26_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/001/00/17/26_avatar_small.jpg","jumpUrl":"","icon_data":{"status":5,
+     * "icon_url":"","icon_width":0,"icon_height":0}},{"room_id":"288016",
+     * "room_src":"https://rpic.douyucdn.cn/acrpic/170922/288016_1421.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/288016_1421.jpg","isVertical":0,
+     * "cate_id":1,"room_name":"2017全球总决赛9月23日13:00","owner_uid":"19344409",
+     * "nickname":"英雄联盟官方赛事","online":350040,"url":"http://www.douyu.com/lols7",
+     * "game_url":"http://www.douyu.com/directory/game/LOL","game_name":"英雄联盟",
+     * "avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/05/20/1f3ce55829bc50da263a938bd81aebfc_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/05/20/1f3ce55829bc50da263a938bd81aebfc_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/05/20/1f3ce55829bc50da263a938bd81aebfc_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"79663","room_src":"https://rpic.douyucdn.cn/acrpic/170922/79663_1420.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/79663_1420.jpg","isVertical":0,
+     * "cate_id":1,"room_name":"完美:A怪/JKL/S赛战队","owner_uid":"2656332","nickname":"完美OBAndy",
+     * "online":272063,"url":"http://www.douyu.com/XYW","game_url":"http://www.douyu
+     * .com/directory/game/LOL","game_name":"英雄联盟","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/002/65/63/32_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/002/65/63/32_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/002/65/63/32_avatar_small.jpg","jumpUrl":"","icon_data":{"status":5,
+     * "icon_url":"","icon_width":0,"icon_height":0}},{"room_id":"452628",
+     * "room_src":"https://rpic.douyucdn.cn/acrpic/170922/452628_1422.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/452628_1422.jpg","isVertical":0,
+     * "cate_id":134,"room_name":"iPhone 8/Plus 新品开箱","owner_uid":"27447102","nickname":"科技美学中国",
+     * "online":71357,"url":"http://www.douyu.com/kejimeixue","game_url":"http://www.douyu
+     * .com/directory/game/smkj","game_name":"数码科技","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/027/44/71/02_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/027/44/71/02_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/027/44/71/02_avatar_small.jpg","jumpUrl":"","icon_data":{"status":4,
+     * "icon_url":"https://staticlive.douyucdn.cn/upload/icon/63f9bb6324afb3f79b88592a3705877b
+     * .png","icon_width":"126","icon_height":"33"}},{"room_id":"2313024",
+     * "room_src":"https://rpic.douyucdn.cn/acrpic/170914/2313024_1151.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170914/2313024_1151.jpg","isVertical":0,
+     * "cate_id":250,"room_name":"挥洒青春汗水，叙写辅警乐章","owner_uid":"144451029","nickname":"光谷警花在线",
+     * "online":14134,"url":"http://www.douyu.com/2313024","game_url":"http://www.douyu
+     * .com/directory/game/znl","game_name":"正能量","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/11/10/de9b7de7a70f27f5cc29d93de8ae2a13_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/11/10/de9b7de7a70f27f5cc29d93de8ae2a13_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/11/10/de9b7de7a70f27f5cc29d93de8ae2a13_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"2599058","room_src":"https://rpic.douyucdn.cn/acrpic/170922/2599058_1412.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/2599058_1412.jpg","isVertical":0,
+     * "cate_id":250,"room_name":"歪果仁进4A景区找茬！错误英文翻译有多少","owner_uid":"12514573",
+     * "nickname":"楚天都市报","online":8152,"url":"http://www.douyu.com/ctdsb","game_url":"http://www
+     * .douyu.com/directory/game/znl","game_name":"正能量","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/18/11/5944b3384724cc8eb633ee00f769c8d5_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/18/11/5944b3384724cc8eb633ee00f769c8d5_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/18/11/5944b3384724cc8eb633ee00f769c8d5_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"3223045","room_src":"https://rpic.douyucdn.cn/acrpic/170921/3223045_1535.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170921/3223045_1535.jpg","isVertical":0,
+     * "cate_id":250,"room_name":"艾滋病村的\u201c电保姆\u201d","owner_uid":"163388978",
+     * "nickname":"湖北省总工会","online":81571,"url":"http://www.douyu.com/3223045",
+     * "game_url":"http://www.douyu.com/directory/game/znl","game_name":"正能量",
+     * "avatar":"https://apic.douyucdn.cn/upload/avatar/default/01_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn.cn/upload/avatar/default/01_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn.cn/upload/avatar/default/01_small.jpg","jumpUrl":"",
+     * "icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"1746151","room_src":"https://rpic.douyucdn.cn/acrpic/170922/1746151_1427.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/1746151_1427.jpg","isVertical":0,
+     * "cate_id":1,"room_name":"毒纪上单：峡谷之巅马上登顶","owner_uid":"111876847","nickname":"巨头毒纪",
+     * "online":199049,"url":"http://www.douyu.com/1746151","game_url":"http://www.douyu
+     * .com/directory/game/LOL","game_name":"英雄联盟","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/15/02/7e21b1e5603e68038efc14b13751b82d_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/15/02/7e21b1e5603e68038efc14b13751b82d_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/15/02/7e21b1e5603e68038efc14b13751b82d_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":4,"icon_url":"https://staticlive.douyucdn
+     * .cn/upload/icon/74daf2afda59c97fa3a2d69f04caa90d.jpg","icon_width":"126",
+     * "icon_height":"33"}},{"room_id":"208114","room_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/208114_1420.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/208114_1420.jpg","isVertical":0,"cate_id":2,
+     * "room_name":"狗贼：人一定要有梦想！不然跟咸鱼有咩区别","owner_uid":"9468763","nickname":"恩基爱萌萌哒的狗贼",
+     * "online":182518,"url":"http://www.douyu.com/gouzei","game_url":"http://www.douyu
+     * .com/directory/game/How","game_name":"炉石传说","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/11/08/60346d60b8e39bb3e15a00c2908b2108_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/11/08/60346d60b8e39bb3e15a00c2908b2108_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201707/11/08/60346d60b8e39bb3e15a00c2908b2108_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":4,"icon_url":"https://staticlive.douyucdn
+     * .cn/upload/icon/2163965fa417666a5baff307004b509d.png","icon_width":"100",
+     * "icon_height":"100"}},{"room_id":"84074","room_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/84074_1420.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/84074_1420.jpg","isVertical":0,"cate_id":1,"room_name":"炫神：最强伤害
+     * 剑神出世峡谷之巅","owner_uid":"624144","nickname":"Last炫神丶zz","online":170035,"url":"http://www
+     * .douyu.com/xuanshen","game_url":"http://www.douyu.com/directory/game/LOL",
+     * "game_name":"英雄联盟","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201704/02/11/2657baf2754be910ea9e4353392000b7_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201704/02/11/2657baf2754be910ea9e4353392000b7_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201704/02/11/2657baf2754be910ea9e4353392000b7_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":4,"icon_url":"https://staticlive.douyucdn
+     * .cn/upload/icon/74daf2afda59c97fa3a2d69f04caa90d.jpg","icon_width":"126",
+     * "icon_height":"33"}},{"room_id":"1969843","room_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/1969843_1408.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/1969843_1408.jpg","isVertical":0,"cate_id":270,
+     * "room_name":"NB211:人形自走98K","owner_uid":"3228686","nickname":"NB211莉莉ZHOULINLI",
+     * "online":168983,"url":"http://www.douyu.com/1969843","game_url":"http://www.douyu
+     * .com/directory/game/jdqs","game_name":"绝地求生","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201706/26/01/185579f5e2e77938f2405a68379b059a_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201706/26/01/185579f5e2e77938f2405a68379b059a_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201706/26/01/185579f5e2e77938f2405a68379b059a_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":4,"icon_url":"https://staticlive.douyucdn
+     * .cn/upload/icon/927c166c96cbd33fb03ad15ac6eaadd7.png","icon_width":"126",
+     * "icon_height":"33"}},{"room_id":"1797491","room_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/1797491_1408.jpg","vertical_src":"https://rpic.douyucdn
+     * .cn/acrpic/170922/1797491_1408.jpg","isVertical":0,"cate_id":181,"room_name":"最强射手7天挑战101星
+     * 输一把送红包","owner_uid":"58995031","nickname":"安格呀","online":164940,"url":"http://www.douyu
+     * .com/1797491","game_url":"http://www.douyu.com/directory/game/wzry","game_name":"王者荣耀",
+     * "avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201705/16/14/59fdd318fc38b17fe1ac61661a7df18b_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201705/16/14/59fdd318fc38b17fe1ac61661a7df18b_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201705/16/14/59fdd318fc38b17fe1ac61661a7df18b_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"319538","room_src":"https://rpic.douyucdn.cn/acrpic/170922/319538_1421.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/319538_1421.jpg","isVertical":0,
+     * "cate_id":1,"room_name":"誓约：峡谷之巅杀个王者！","owner_uid":"2904577","nickname":"誓约中二约",
+     * "online":154863,"url":"http://www.douyu.com/dushuren","game_url":"http://www.douyu
+     * .com/directory/game/LOL","game_name":"英雄联盟","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/002/90/45/77_avatar_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/002/90/45/77_avatar_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/002/90/45/77_avatar_small.jpg","jumpUrl":"","icon_data":{"status":5,
+     * "icon_url":"","icon_width":0,"icon_height":0}},{"room_id":"782498",
+     * "room_src":"https://staticlive.douyucdn
+     * .cn/upload/web_pic/fc76e4cf9ac2555f7d2ca9976feff2b4_thumb.png",
+     * "vertical_src":"https://staticlive.douyucdn
+     * .cn/upload/web_pic/fc76e4cf9ac2555f7d2ca9976feff2b4_thumb.png","isVertical":0,
+     * "cate_id":207,"room_name":"【昆仑决城市英雄】重庆站","owner_uid":"57124623","nickname":"企鹅跳转专用9",
+     * "online":0,"url":"http://www.douyu.com/782498","game_url":"http://www.douyu
+     * .com/directory/game/qezb","game_name":"企鹅直播","avatar":"https://apic.douyucdn
+     * .cn/upload/avatar/default/03_big.jpg","avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avatar/default/03_middle.jpg","avatar_small":"https://apic.douyucdn
+     * .cn/upload/avatar/default/03_small.jpg","jumpUrl":"http://m.live.qq.com/10029475",
+     * "icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"2769899","room_src":"https://rpic.douyucdn.cn/acrpic/170922/2769899_1412.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/2769899_1412.jpg","isVertical":0,
+     * "cate_id":246,"room_name":"上过跨界歌王片头的小姐姐","owner_uid":"15169601","nickname":"请叫我陆艺萱",
+     * "online":1053,"url":"http://www.douyu.com/2769899","game_url":"http://www.douyu
+     * .com/directory/game/YY","game_name":"鱼艺","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/12/09/ba3bc4fafc716372fa8485f359e05a96_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/12/09/ba3bc4fafc716372fa8485f359e05a96_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/12/09/ba3bc4fafc716372fa8485f359e05a96_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}},
+     * {"room_id":"3263707","room_src":"https://rpic.douyucdn.cn/acrpic/170922/3263707_1415.jpg",
+     * "vertical_src":"https://rpic.douyucdn.cn/acrpic/170922/3263707_1415.jpg","isVertical":0,
+     * "cate_id":159,"room_name":"超级女声--季星星","owner_uid":"166099011","nickname":"季星星x",
+     * "online":1011,"url":"http://www.douyu.com/3263707","game_url":"http://www.douyu
+     * .com/directory/game/ss","game_name":"时尚","avatar":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/20/19/40d75c26544259b7ffefbcfe6614a640_big.jpg",
+     * "avatar_mid":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/20/19/40d75c26544259b7ffefbcfe6614a640_middle.jpg",
+     * "avatar_small":"https://apic.douyucdn
+     * .cn/upload/avanew/face/201709/20/19/40d75c26544259b7ffefbcfe6614a640_small.jpg",
+     * "jumpUrl":"","icon_data":{"status":5,"icon_url":"","icon_width":0,"icon_height":0}}]
+     */
+
+    private int error;
+    private List<DataBean> data;
+
+    public int getError() {
+        return error;
+    }
+
+    public void setError(int error) {
+        this.error = error;
+    }
+
+    public List<DataBean> getData() {
+        return data;
+    }
+
+    public void setData(List<DataBean> data) {
+        this.data = data;
+    }
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DouyuDemo</string>
+    <string name="tv_1">斗</string>
+    <string name="tv_2">鱼</string>
+    <string name="tv_3">直</string>
+    <string name="tv_4">播</string>
+</resources>
